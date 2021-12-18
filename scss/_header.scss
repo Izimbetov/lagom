@@ -21,6 +21,7 @@
 
     &:checked~.header-menu-block {
         left: 0px;
+        height: 340px;
     }
 }
 
@@ -28,15 +29,19 @@
     position: absolute;
     top: 20px;
     left: 83%;
+    z-index: 2;
 }
 
 .header-nav-menu-block-list {
+    line-height: 22px;
+
     li {
         list-style: none;
         margin-top: 10px;
     }
 
     a {
+        font-family: 'Anton', sans-serif;
         font-size: 15px;
         text-decoration: none;
         color: #fff;
@@ -85,23 +90,63 @@
 }
 
 .header-nav-menu-block__link {
+    margin-top: 20px;
     color: #fff;
+    font-family: 'Anton', sans-serif;
 }
 
 .header-menu-block-log {
+    text-align: start;
     position: absolute;
     width: 100%;
     top: 20px;
     left: 100%;
     padding: 50px 0;
     transition: 0.3s all linear;
-
     background-color: #fd405e;
+    &-form{
+        input:nth-child(5){
+            margin-left: 40px ;
+            margin-top: 20px;
+        }
+    }
 
+    p {
+        margin-left: 40px;
+        
+
+        >input {
+            padding: 5px;
+            border: 1px solid #fff;
+            outline: none;
+            border-radius: 5px;
+            background-color: #fd405e;
+            color: #fff;
+        }
+
+        label {
+            font-family: "Poppins";
+            font-size: 14px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #fff;
+            margin: 10px 0;
+            display: inline-block;
+        }
+    }
+
+    input {
+        padding: 5px;
+        border: 1px solid #fff;
+        outline: none;
+        border-radius: 5px;
+        background-color: #fd405e;
+        color: #fff;
+    }
 }
 
 .header-nav-menu-block__in:checked~.header-menu-block-log {
-
+    height: 315px;
     left: 0;
 
 }
