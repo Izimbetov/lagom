@@ -28,7 +28,7 @@
 
 .header {
   background-color: #fd405e;
-  height: 340px;
+  min-height: 340px;
   position: relative;
   overflow: hidden;
 }
@@ -38,6 +38,14 @@
   font-size: 38px;
   color: #fff;
   padding-top: 10px;
+}
+
+.header-menu__in {
+  display: none;
+}
+
+.header-menu__in:checked ~ .header-menu-block {
+  left: 0px;
 }
 
 .header-menu__lab {
@@ -59,25 +67,19 @@
 }
 
 .header-menu-block {
-  bottom: 10px;
-  text-align: center;
-  background-color: #fd405e;
-}
-
-.header-menu__in {
-  display: none;
-}
-
-.header-menu__in:checked ~ .header-menu-block {
-  left: 0px;
-  display: block;
-}
-
-.header-menu-block {
+  padding: 50px 0;
   position: absolute;
   left: 100%;
   -webkit-transition: 0.4s all linear;
   transition: 0.4s all linear;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #fd405e;
+  border: 3px solid teal;
+  -webkit-transition: 0.3s all linear;
+  transition: 0.3s all linear;
 }
 
 .header-menu-block-form__in {
@@ -126,15 +128,16 @@
 
 .header-menu-block-log {
   position: absolute;
+  width: 100%;
+  top: 20px;
+  left: 100%;
+  padding: 50px 0;
+  -webkit-transition: 0.3s all linear;
+  transition: 0.3s all linear;
   background-color: #fd405e;
 }
 
 .header-nav-menu-block__in:checked ~ .header-menu-block-log {
-  background-color: #fd405e;
-  top: 10px;
-  left: -100%;
-  right: 100%;
-  -webkit-transition: 0.3s all linear;
-  transition: 0.3s all linear;
+  left: 0;
 }
 /*# sourceMappingURL=style.css.map */
