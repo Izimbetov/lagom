@@ -3,9 +3,9 @@
     min-height: 340px;
     position: relative;
     overflow: hidden;
-
+    
     &-block {
-
+        
         p {
             font-family: 'Poppins', sans-serif;
             font-size: 38px;
@@ -13,6 +13,22 @@
             padding-top: 10px;
         }
     }
+
+        &-slider{
+            font-family: 'Playfair Display', serif;
+            color: #fff;
+            position: relative;
+            p{
+                font-size:28px ;
+            }
+            span{
+                position: absolute;
+                font-family: 'Playfair Display', serif;
+                font-style: italic;
+                font-size: 64px;
+            }
+            
+        }
 }
 
 
@@ -104,16 +120,17 @@
     padding: 50px 0;
     transition: 0.3s all linear;
     background-color: #fd405e;
-    &-form{
-        input:nth-child(5){
-            margin-left: 40px ;
+
+    &-form {
+        input:nth-child(5) {
+            margin-left: 40px;
             margin-top: 20px;
         }
     }
 
     p {
         margin-left: 40px;
-        
+
 
         >input {
             padding: 5px;

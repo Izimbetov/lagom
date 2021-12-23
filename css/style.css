@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
 *,
 ::after,
 ::before {
@@ -38,6 +40,23 @@
   font-size: 38px;
   color: #fff;
   padding-top: 10px;
+}
+
+.header-slider {
+  font-family: 'Playfair Display', serif;
+  color: #fff;
+  position: relative;
+}
+
+.header-slider p {
+  font-size: 28px;
+}
+
+.header-slider span {
+  position: absolute;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 64px;
 }
 
 .header-menu__in {
