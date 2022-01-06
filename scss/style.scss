@@ -8,7 +8,7 @@
 
 
 .container{
-    max-width: 280px;
+    max-width: 270px;
     margin: 0 auto;
 }
 
@@ -25,10 +25,13 @@
 
 @media only screen and (min-width:1024px){
     .container{
-        max-width: 900px;
+        max-width: 1170px;
         margin: 0 auto;
     }
 }
 
 
 @import "header";
+@import "arrivel";
+@import "shining";
+@import "images";
